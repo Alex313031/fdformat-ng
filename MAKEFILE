@@ -13,7 +13,7 @@ AOPT = /w2 /jQuirks
 DELMAP = $(COMSPEC) /C DEL *.obj *.map *.bak *.sik *.old
 
 #Don't generate 286 Code
-286 = /$G-
+286 = /$G+
 
 #English-Language
 LANG = 1
@@ -78,5 +78,5 @@ readboot.exe: readboot.pas diskio.tpu auxdos.tpu
 
 wimage.exe: wimage.pas diskio.tpu auxdos.tpu
 
-fdform18: fdread.exe fdr88.exe german\fdformat.exe fdformat.exe getboot.exe readboot.exe fdboot.sys fdboot.049 fdboot.001 wimage.exe fdformat.new readme.1st makefile
+fdform18: fdread.exe fdr88.exe german\xformat.exe xformat.exe getboot.exe readboot.exe fdboot.sys fdboot.049 fdboot.001 wimage.exe xformat.new readme.1st makefile
 # pkzip -f -rp fdform18.zip

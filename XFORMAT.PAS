@@ -65,9 +65,9 @@ CONST text70 = 'Gnnn      GAP-LÑnge festlegen                    je nach Format'
 CONST text71 = 'Lesen Sie die FDFORMAT.DOC Datei fÅr weitere Optionen';
 CONST text54 = 'Dieses Programm benîtigt mindestens DOS 3.20.';
 {$IFOPT G+}
-CONST text55 = 'XFORMAT/286 - Formatieren von Disketten mit erhîhter KapazitÑt';
+CONST text55 = 'XFORMAT - Formatieren von Disketten mit erhîhter KapazitÑt';
 {$ELSE}
-CONST text55 = 'XFORMAT/88 - Formatieren von Disketten mit erhîhter KapazitÑt';
+CONST text55 = 'XFORMAT - Formatieren von Disketten mit erhîhter KapazitÑt';
 {$ENDIF}
 CONST text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.8';
 CONST text57 = 'Sie kînnen nur 1 oder 2 Seiten nehmen.';
@@ -179,9 +179,9 @@ const text70 = 'Gnnn     Use specified GAP-Length                depends on form
 const text71 = 'See the FDFORMAT.DOC file for other options';
 const text54 = 'This program requires DOS 3.2 or higher.';
 {$IFOPT G-}
-const text55 = 'XFORMAT/88 - Disk Formatter for High Capacity Disks - Ver 1.8';
+const text55 = 'XFORMAT - Disk Formatter for High Capacity Disks - Ver 1.8';
 {$ELSE}
-const text55 = 'XFORMAT/286 - Disk Formatter for High Capacity Disks - Ver 1.8';
+const text55 = 'XFORMAT - Disk Formatter for High Capacity Disks - Ver 1.8';
 {$ENDIF}
 const text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.8';
 const text57 = 'Heads must be 1 or 2.';
