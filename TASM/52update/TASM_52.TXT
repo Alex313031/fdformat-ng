@@ -1,0 +1,27 @@
+UPDATES FOR TASM v.5.0
+----------------------
+
+Turbo Assembler  Version 5.2  Copyright (c) 1988, 1999 Inprise Corporation
+(From  CBuilder4)
+
+Added new directive    ".686" ,".686P"
+Added new directive    ".MMX"                (but ".XMM" not suppotred...)
+
+
+---------------------------------------
+Directory BIN\
+
+BRC32    EXE     69152 27.01.99    4:00
+COFF2OMF EXE    115685 27.01.99    4:00
+GREP     EXE    102400 27.01.99    4:00
+ILINK32  EXE    275968 27.01.99    4:00
+IMPDEF   EXE     73728 27.01.99    4:00
+IMPLIB   EXE     90112 27.01.99    4:00
+MAKE     EXE    114688 27.01.99    4:00
+TASM32   EXE    188416 27.01.99    4:00
+TDSTRP32 EXE     45056 27.01.99    4:00
+TDUMP    EXE    483131 27.01.99    4:00
+TLIB     EXE     61440 27.01.99    4:00
+TOUCH    EXE     73728 27.01.99    4:00
+---------------------------------------
+

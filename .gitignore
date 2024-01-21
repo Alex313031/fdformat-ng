@@ -1,0 +1,19 @@
+# Generated files
+
+*.bak
+*.obj
+*.old
+*.map
+*.sik
+*.com
+
+# Binaries
+*.zip
+*.exe
+*.tmp
+
+# Exclude build tools
+!LZEXE/*
+!PKZIP2/*
+!TASM/*
+!TPASC/*
