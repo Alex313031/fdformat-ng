@@ -1,10 +1,10 @@
 {$A+,B-,D+,E+,F-,L+,N-,O-,R-,S-,V-}
 {$M 8192,0,0}
-PROGRAM FDFORMAT;
+PROGRAM XFORMAT;
 
 USES dos,auxdos,baseconv,desqview;
 
-  {Copyright (c) 1988-91, Christoph H. HochstÑtter}
+  {Copyright (c) 1988-91, Christoph H. HochstÑtter & 2024 Alex313031}
   {Donated to the Public-Domain for non-commercial usage}
   {Compiled in Turbo-Pascal 6.0}
 
@@ -48,8 +48,8 @@ CONST text38 = 'nach EPSON QX-16 Standard';
 CONST text39 = 'nach AT-Standard';
 CONST text40 = 'wird nicht unterstÅtzt';
 CONST text41 = 'Syntax Error beim Aufruf.';
-CONST text42 = 'Format ist: FDFORMAT drive: [Optionen]';
-CONST text43 = '  Beispiel: FDFORMAT a: t41 h2 s10 C1 D112';
+CONST text42 = 'Format ist: XFORMAT drive: [Optionen]';
+CONST text43 = '  Beispiel: XFORMAT a: t41 h2 s10 C1 D112';
 CONST text44 = 'Parameter Bedeutung                              Voreinstellung';
 CONST text45 = 'drive:    Laufwerk, das formatiert werden soll   ----';
 CONST text46 = 'Tnn       Anzahl der Spuren je Seite             40/80 je nach Laufwerk';
@@ -65,11 +65,11 @@ CONST text70 = 'Gnnn      GAP-LÑnge festlegen                    je nach Format'
 CONST text71 = 'Lesen Sie die FDFORMAT.DOC Datei fÅr weitere Optionen';
 CONST text54 = 'Dieses Programm benîtigt mindestens DOS 3.20.';
 {$IFOPT G+}
-CONST text55 = 'FDFORMAT/286 - Formatieren von Disketten mit erhîhter KapazitÑt';
+CONST text55 = 'XFORMAT/286 - Formatieren von Disketten mit erhîhter KapazitÑt';
 {$ELSE}
-CONST text55 = 'FDFORMAT/88 - Formatieren von Disketten mit erhîhter KapazitÑt';
+CONST text55 = 'XFORMAT/88 - Formatieren von Disketten mit erhîhter KapazitÑt';
 {$ENDIF}
-CONST text56 = 'Copyright (c) 1988-1991, Christoph H. HochstÑtter, Ver 1.8';
+CONST text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.8';
 CONST text57 = 'Sie kînnen nur 1 oder 2 Seiten nehmen.';
 CONST text58 = 'Sie sollten schon mindestens eine Spur formatieren.';
 CONST text59 = 'Interleave mu· von 1-';
@@ -86,8 +86,8 @@ CONST text72 = 'EIN';
 CONST text73 = 'AUS';
 CONST text74 = 'Bitte Diskettennamen eingeben (max. 11 Zeichen): ';
 CONST text75 = 'Fehler beim Erstellen des Namens.';
-CONST text76 = 'Syntax-Fehler in der Datei FDFORMAT.CFG.';
-CONST text77 = 'Lesefehler in der Datei FDFORMAT.CFG.';
+CONST text76 = 'Syntax-Fehler in der Datei XFORMAT.CFG.';
+CONST text77 = 'Lesefehler in der Datei XFORMAT.CFG.';
 CONST text78 = ', Sektoren: ';
 CONST text80 = 'Fehler beim Aufbau eines neuen Disk-Parameter-Blocks. DOS-Fehler: ';
 CONST text81 = 'Altes Format kann nicht gelesen werden. Formatieren ohne lîschen nicht mîglich.';
@@ -162,8 +162,8 @@ const text38 = 'EPSON QX-16 like';
 const text39 = 'AT-like';
 const text40 = 'Not available or unknown';
 const text41 = 'Syntax Error.';
-const text42 = 'Usage is: FDFORMAT drive: [options]';
-const text43 = ' Example: FDFORMAT a: t41 h2 s10 C1 D112';
+const text42 = 'Usage is: XFORMAT drive: [options]';
+const text43 = ' Example: XFORMAT a: t41 h2 s10 C1 D112';
 const text44 = 'Option   Meaning                                 Default';
 const text45 = 'drive:   drive to be formatted                   none';
 const text46 = 'Tnn      Number of tracks                        40/80 depends on drive';
@@ -179,11 +179,11 @@ const text70 = 'Gnnn     Use specified GAP-Length                depends on form
 const text71 = 'See the FDFORMAT.DOC file for other options';
 const text54 = 'This program requires DOS 3.2 or higher.';
 {$IFOPT G-}
-const text55 = 'FDFORMAT/88 - Disk Formatter for High Capacity Disks - Ver 1.8';
+const text55 = 'XFORMAT/88 - Disk Formatter for High Capacity Disks - Ver 1.8';
 {$ELSE}
-const text55 = 'FDFORMAT/286 - Disk Formatter for High Capacity Disks - Ver 1.8';
+const text55 = 'XFORMAT/286 - Disk Formatter for High Capacity Disks - Ver 1.8';
 {$ENDIF}
-const text56 = 'Copyright (c) 1988-1991, Christoph H. HochstÑtter, Germany';
+const text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.8';
 const text57 = 'Heads must be 1 or 2.';
 const text58 = 'At least one track should be formatted.';
 const text59 = 'Interleave must be from 1 to ';
@@ -200,8 +200,8 @@ const text72 = 'ON';
 const text73 = 'OFF';
 const text74 = 'Enter Volume Name (max. 11 characters): ';
 const text75 = 'Error creating volume label.';
-const text76 = 'Syntax Error in FDFORMAT.CFG.';
-const text77 = 'Error reading FDFORMAT.CFG.';
+const text76 = 'Syntax Error in XFORMAT.CFG.';
+const text77 = 'Error reading XFORMAT.CFG.';
 const text78 = ', Sectors: ';
 const text80 = 'Error building new disk-parameter-block. DOS-Error: ';
 const text81 = 'Cannot read old diskette parameters. Format without erase impossible.';
@@ -221,7 +221,7 @@ CONST text91 = 'BIOS-media-byte is: ';
 CONST text92 = 'x, should be: ';
 CONST text93 = 'drive parameters set via direct write to BIOS-media-byte.';
 CONST text94 = 'Program aborted by user.';
-CONST error01 = 'Illegal Command. Bug in FDFORMAT';
+CONST error01 = 'Illegal Command. Bug in XFORMAT';
 CONST error02 = 'Address mark not found';
 CONST error03 = 'Disk is write protected';
 CONST error04 = 'Sector not found';
@@ -282,7 +282,7 @@ TYPE tabletyp = ARRAY[1..25] OF RECORD
 
   bdib = RECORD
            flag   : Byte;                                                         {Bitmapped flags}
-           dtyp   : Byte;                            {Drive Type: 0,1,2 or 7 supported by FDFORMAT}
+           dtyp   : Byte;                            {Drive Type: 0,1,2 or 7 supported by XFORMAT}
            dflag  : Word;                                                         {Bitmapped flags}
            noc    : Word;                                                     {Number of cylinders}
            mt     : Byte;                                                              {Media Type}
@@ -506,7 +506,7 @@ CONST para17: paratyp =($df,$02,$25,$02,17,$02,$ff,$23,$f6,$0f,$08);
         v360:=0;
         v12:=0;
         v144:=0;
-        x:=FSearch('FDFORMAT.CFG',GetEnv('PATH'));
+        x:=FSearch('XFORMAT.CFG',GetEnv('PATH'));
         IF x<>'' THEN BEGIN
           Assign(f,x);
           {$I-} Reset(f); {$I+}

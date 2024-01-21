@@ -1,7 +1,7 @@
 fdread.exe
 fdr88.exe
-german\fdformat.exe
-fdformat.exe
+german\xformat.exe
+xformat.exe
 getboot.exe
 readboot.exe
 fdboot.sys

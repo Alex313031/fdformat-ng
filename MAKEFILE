@@ -52,13 +52,13 @@ fdboot.001: fdboot.asm getboot.exe
   $(DELMAP)
   getboot fdboot.sys fdboot.001
 
-german\fdformat.exe: fdformat.pas baseconv.tpu desqview.tpu fdboot.049 auxdos.tpu
+german\xformat.exe: xformat.pas baseconv.tpu desqview.tpu fdboot.049 auxdos.tpu
   tpc /DL49 $(286) $&
   lzexe $&
   $(COMSPEC) /C del $&.old
-  $(COMSPEC) /C move fdformat.exe german
+  $(COMSPEC) /C move xformat.exe german
 
-fdformat.exe: fdformat.pas baseconv.tpu desqview.tpu fdboot.001 auxdos.tpu
+xformat.exe: xformat.pas baseconv.tpu desqview.tpu fdboot.001 auxdos.tpu
   tpc /DL1 $(286) $*
   lzexe $*
   $(COMSPEC) /C del $*.old
