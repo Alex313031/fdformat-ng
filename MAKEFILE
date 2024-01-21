@@ -57,7 +57,7 @@ german\xformat.exe: xformat.pas baseconv.tpu desqview.tpu fdboot.049 auxdos.tpu
   lzexe $&
   $(COMSPEC) /C del $&.old
   $(COMSPEC) /C mkdir german
-  $(COMSPEC) /C move xformat.exe german
+  $(COMSPEC) /C move xformat.exe german\xformat.exe
 
 xformat.exe: xformat.pas baseconv.tpu desqview.tpu fdboot.001 auxdos.tpu
   tpc /DL1 $(286) $*
