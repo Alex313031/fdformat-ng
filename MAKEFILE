@@ -2,7 +2,6 @@
 #
 # Turbo-Pascal 6.0
 # Turbo-Assembler 2.00 or higher
-# 4DOS Version 3.00 or higher
 # LZEXE Version 0.91
 
 
@@ -57,6 +56,7 @@ german\xformat.exe: xformat.pas baseconv.tpu desqview.tpu fdboot.049 auxdos.tpu
   tpc /DL49 $(286) $&
   lzexe $&
   $(COMSPEC) /C del $&.old
+  $(COMSPEC) /C mkdir german
   $(COMSPEC) /C move xformat.exe german
 
 xformat.exe: xformat.pas baseconv.tpu desqview.tpu fdboot.001 auxdos.tpu
@@ -80,7 +80,7 @@ readboot.exe: readboot.pas diskio.tpu auxdos.tpu
 wimage.exe: wimage.pas diskio.tpu auxdos.tpu
 
 # Build All
-fdform19: fdread.exe fdr88.exe german\xformat.exe xformat.exe getboot.exe readboot.exe fdboot.sys fdboot.049 fdboot.001 wimage.exe xformat.new readme.1st makefile
+fdform19: fdread.exe fdr88.exe german\xformat.exe xformat.exe getboot.exe readboot.exe fdboot.sys fdboot.049 fdboot.001 wimage.exe xformat.new readme.txt makefile
 
 # Not run anymore, use PACK.bat
 # pkzip -f -rp fdform19.zip

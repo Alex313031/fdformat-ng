@@ -29,6 +29,6 @@ GETBOOT.PAS         - Source in TP 6.0 of GETBOOT
 MAKEFILE            - Makefile for FDFORMAT
 READBOOT.EXE        - Read/Write Boot-Sector from/to file
 READBOOT.PAS        - Source in TP 6.0 of READBOOT
-README.1ST          - This file
+README.TXT          - This file
 WIMAGE.EXE          - Diskcopies to/from file
 WIMAGE.PAS          - Source of WIMAGE in TP 6.0

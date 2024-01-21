@@ -9,6 +9,6 @@ fdboot.049
 fdboot.001
 wimage.exe
 xformat.new
-readme.1st
+readme.txt
 fdformat.doc
 makefile
