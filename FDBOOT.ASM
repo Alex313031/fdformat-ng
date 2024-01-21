@@ -79,14 +79,14 @@ weiter:      push      si                       ;Save SI
 output       endp
 
              IF        LANGUAGE EQ 1
-text1        db        'FDBOOT Version 1.8',10,13
+text1        db        'FDBOOT Version 1.9',10,13
              db        'No Systemdisk. Booting from harddisk.',10,13,0
 text2        db        'Cannot load from harddisk.',10,13
              db        'Insert Systemdisk and press any key.',10,13,0
              ENDIF
 
              IF        LANGUAGE EQ 49
-text1        db        'FDBOOT Version 1.8',10,13
+text1        db        'FDBOOT Version 1.9',10,13
              db        'Keine Systemdiskette. Starten von Festplatte.',10,13,0
 text2        db        'Kann nicht von der Festplatte starten.',10,13
              db        'System-Diskette in Laufwerk A: einlegen',10,13
