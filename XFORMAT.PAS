@@ -69,7 +69,7 @@ CONST text55 = 'XFORMAT - Formatieren von Disketten mit erh”hter Kapazit„t';
 {$ELSE}
 CONST text55 = 'XFORMAT - Formatieren von Disketten mit erh”hter Kapazit„t';
 {$ENDIF}
-CONST text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.8';
+CONST text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.9';
 CONST text57 = 'Sie k”nnen nur 1 oder 2 Seiten nehmen.';
 CONST text58 = 'Sie sollten schon mindestens eine Spur formatieren.';
 CONST text59 = 'Interleave muá von 1-';
@@ -179,11 +179,11 @@ const text70 = 'Gnnn     Use specified GAP-Length                depends on form
 const text71 = 'See the FDFORMAT.DOC file for other options';
 const text54 = 'This program requires DOS 3.2 or higher.';
 {$IFOPT G-}
-const text55 = 'XFORMAT - Disk Formatter for High Capacity Disks - Ver 1.8';
+const text55 = 'XFORMAT - Disk Formatter for High Capacity Disks - Ver 1.9';
 {$ELSE}
-const text55 = 'XFORMAT - Disk Formatter for High Capacity Disks - Ver 1.8';
+const text55 = 'XFORMAT - Disk Formatter for High Capacity Disks - Ver 1.9';
 {$ENDIF}
-const text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.8';
+const text56 = 'Copyright (c) 2024 Alex313031. Ver. 1.9';
 const text57 = 'Heads must be 1 or 2.';
 const text58 = 'At least one track should be formatted.';
 const text59 = 'Interleave must be from 1 to ';
