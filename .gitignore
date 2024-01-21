@@ -13,6 +13,8 @@
 *.tmp
 *.img
 
+/dist/
+
 # Exclude build tools
 !LZEXE/*
 !PKZIP2/*
