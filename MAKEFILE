@@ -1,21 +1,21 @@
-#To use this MAKEFIILE, you need:
+# To use this MAKEFIILE, you need:
 #
-#Turbo-Pascal 6.0
-#Turbo-Assembler 1.00 or higher
-#4DOS Version 3.00 or higher
-#LZEXE Version 0.91
+# Turbo-Pascal 6.0
+# Turbo-Assembler 2.00 or higher
+# 4DOS Version 3.00 or higher
+# LZEXE Version 0.91
 
 
-#Assembler-Options
+# Assembler-Options
 AOPT = /w2 /jQuirks
 
-#Delete garbage
+# Delete garbage
 DELMAP = $(COMSPEC) /C DEL *.obj *.map *.bak *.sik *.old
 
-#Don't generate 286 Code
+# Don't generate 286 Code
 286 = /$G+
 
-#English-Language
+# English Language
 LANG = 1
 
 .pas.exe:
@@ -26,7 +26,7 @@ LANG = 1
 .pas.tpu:
   tpc /DL$(LANG) $(286) $*
 
-all: fdform18
+all: fdform19
 
 fdread.exe: fdread.asm cputest.asm
   tasm fdread,fdread,fdread $(AOPT) /DCPU=/$G+
@@ -52,6 +52,7 @@ fdboot.001: fdboot.asm getboot.exe
   $(DELMAP)
   getboot fdboot.sys fdboot.001
 
+# German Language
 german\xformat.exe: xformat.pas baseconv.tpu desqview.tpu fdboot.049 auxdos.tpu
   tpc /DL49 $(286) $&
   lzexe $&
@@ -78,5 +79,8 @@ readboot.exe: readboot.pas diskio.tpu auxdos.tpu
 
 wimage.exe: wimage.pas diskio.tpu auxdos.tpu
 
-fdform18: fdread.exe fdr88.exe german\xformat.exe xformat.exe getboot.exe readboot.exe fdboot.sys fdboot.049 fdboot.001 wimage.exe xformat.new readme.1st makefile
-# pkzip -f -rp fdform18.zip
+# Build All
+fdform19: fdread.exe fdr88.exe german\xformat.exe xformat.exe getboot.exe readboot.exe fdboot.sys fdboot.049 fdboot.001 wimage.exe xformat.new readme.1st makefile
+
+# Not run anymore, use PACK.bat
+# pkzip -f -rp fdform19.zip

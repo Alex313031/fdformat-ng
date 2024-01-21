@@ -1,6 +1,6 @@
 @ECHO OFF
-ECHO Packaging fdform18.zip...
+ECHO Packaging fdform19.zip...
 
-DEL fdform18.zip
-pkzip -rp fdform18.zip @list.txt
-;pkzip -f -rp fdform18.zip @list.txt
+DEL fdform19.zip
+pkzip -rp fdform19.zip @list.txt
+;pkzip -f -rp fdform19.zip @list.txt
