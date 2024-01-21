@@ -11,6 +11,7 @@
 *.zip
 *.exe
 *.tmp
+*.img
 
 # Exclude build tools
 !LZEXE/*

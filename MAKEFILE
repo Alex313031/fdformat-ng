@@ -26,7 +26,7 @@ LANG = 1
 .pas.tpu:
   tpc /DL$(LANG) $(286) $*
 
-all: fdform18.zip
+#all: fdform18.zip
 
 fdread.exe: fdread.asm cputest.asm
   tasm fdread,fdread,fdread $(AOPT) /DCPU=/$G+
