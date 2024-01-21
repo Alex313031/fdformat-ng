@@ -1,20 +1,17 @@
 # FDFORMAT
 fdformat - Set of floppy utilities including xformat.exe - Format Floppy Disks with Higher Capacity
 
-This project is of historic interest only. 
-
-[Christoph Hochstätter](https://github.com/christoh) worked on it between 1988 and 1991. 
-
-It is written in Turbo Pascal and x86 Assembly.
-
+This project is of historic interest only.  
+[Christoph Hochstätter](https://github.com/christoh) worked on it between 1988 and 1991.  
+It is written in Turbo Pascal and x86 Assembly.  
 It runs under MS-DOS/PC-DOS 3.20 or higher and also Windows 95/98/98SE/ME. 
 
 SYSTEM REQUIREMENTS
 -------------------
 
-IBM or compatible Computer
-DOS 3.20 or above
-4.77Mhz. 8088
+IBM or compatible Computer  
+DOS 3.20 or above  
+4.77Mhz. 8088  
 
 
 FEATURES OF FDFORMAT
