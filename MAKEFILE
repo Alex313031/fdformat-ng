@@ -1,7 +1,9 @@
 # To use this MAKEFIILE, you need:
-#
+# 
+# MS-DOS 5.0 or higher
 # Turbo-Pascal 6.0
 # Turbo-Assembler 2.00 or higher
+# 4DOS Version 3.00 or higher (only needed if MS-DOS is 5.0)
 # LZEXE Version 0.91
 
 
